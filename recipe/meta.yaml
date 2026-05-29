@@ -1,5 +1,5 @@
 {% set name = "tardigrade_micromorphic_tools" %}
-{% set version = "1.4.4" %}
+{% set version = "1.4.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/UCBoulder/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 36d45625e7f81b31213e803cc26e84df5a36cb452b2f0947d3d8814cdcf8446b
+  sha256: 6515b27fe2ab8682405767e3613b2d3d59d694555d3ffd6b97164c1b75528a03
 
 build:
-  number: 1
+  number: 0
   script_env:
     - SETUPTOOLS_SCM_PRETEND_VERSION={{ version }}
   script:
